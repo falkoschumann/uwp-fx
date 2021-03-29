@@ -1,0 +1,271 @@
+/* Style based on Universal Windows Platform
+ * See https://docs.microsoft.com/en-us/windows/uwp/design/
+ */
+
+@font-face {
+  font-family: 'Selawik Light';
+  font-style: normal;
+  src: url('fonts/selawkl.ttf');
+}
+
+@font-face {
+  font-family: 'Selawik Semilight';
+  font-style: normal;
+  src: url('fonts/selawksl.ttf');
+}
+
+@font-face {
+  font-family: 'Selawik';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/selawk.ttf');
+}
+
+@font-face {
+  font-family: 'Selawik Semibold';
+  font-style: normal;
+  src: url('fonts/selawksb.ttf');
+}
+
+@font-face {
+  font-family: 'Selawik Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/selawkb.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Thin';
+  font-style: normal;
+  src: url('fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Thin';
+  font-style: italic;
+  src: url('fonts/Roboto-ThinItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: italic;
+  src: url('fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: italic;
+  src: url('fonts/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: italic;
+  src: url('fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  font-style: normal;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  font-style: italic;
+  src: url('fonts/Roboto-BlackItalic.ttf');
+}
+
+.root {
+  -fx-font-family: "Roboto";
+  -fx-font-size: 14px;
+
+  -fx-base: white;
+  -fx-control-inner-background: white;
+  -fx-dark-text-color: black;
+  -fx-mid-text-color: #666;
+  -fx-light-text-color: white;
+  -fx-accent: #0078d4;
+  -fx-default-button: #f00;
+  -fx-focus-color: #0090ff;
+  -fx-faint-focus-color: #0090ff22;
+  -fx-text-background-color: -fx-dark-text-color;
+  -fx-text-box-border: #999;
+  -fx-text-base-color: -fx-dark-text-color;
+  -fx-text-inner-color: -fx-dark-text-color;
+}
+
+/* Screen sizes and breakpoints
+ * See https://docs.microsoft.com/en-us/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+ */
+
+.container-sm {
+  -fx-padding: 0 12;
+  -fx-background-color: white;
+}
+
+.container-md {
+  -fx-padding: 0 24;
+  -fx-background-color: white;
+}
+
+.container-lg {
+  -fx-padding: 0 24;
+  -fx-background-color: white;
+}
+
+/* Type Ramp
+ * See https://docs.microsoft.com/en-us/windows/uwp/design/style/typography
+ */
+
+.header {
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 46px;
+}
+
+.subheader {
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 34px;
+}
+
+.title {
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 24px;
+}
+
+.subtitle {
+  -fx-font-family: "Roboto";
+  -fx-font-size: 20px;
+}
+
+.base {
+  -fx-font-family: "Roboto Medium";
+  -fx-font-size: 14px;
+}
+
+.body {
+  -fx-font-family: "Roboto Regular";
+  -fx-font-size: 14px;
+}
+
+.caption {
+  -fx-font-family: "Roboto Regular";
+  -fx-font-size: 12px;
+}
+
+/* Forms
+ * See https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/forms
+ */
+
+.input-control {
+  -fx-padding: 0 0 16 0;
+  -fx-border-insets: 0 0 16 0;
+  -fx-background-insets: 0 0 16 0;
+}
+
+.input-control > .body {
+  -fx-padding: 0 0 8 0;
+  -fx-border-insets: 0 0 8 0;
+  -fx-background-insets: 0 0 8 0;
+}
+
+.input-control > .caption {
+  -fx-padding: 4 0 0 0;
+  -fx-border-insets: 4 0 0 0;
+  -fx-background-insets: 4 0 0 0;
+  -fx-text-fill: -fx-mid-text-color;
+}
+
+/*
+ * Adapt Java FX Controls
+ */
+
+.button,
+.check-box > .box {
+  -fx-background-color: #ccc;
+  -fx-background-insets: 0;
+  -fx-background-radius: 2;
+  -fx-border-width: 1.5;
+  -fx-border-color: #ccc;
+  -fx-border-radius: 2;
+  -fx-padding: 4 8;
+  -fx-text-fill: -fx-text-base-color;
+}
+
+.button:focused,
+.check-box:focused > .box {
+  -fx-border-color: -fx-accent;
+}
+
+.button:default {
+  -fx-background-color: -fx-accent;
+  -fx-border-color: -fx-accent;
+  -fx-text-fill: -fx-light-text-color;
+}
+
+.check-box {
+  -fx-label-padding: 0 0 0 8;
+}
+
+.check-box > .box {
+  -fx-background-color: -fx-background;
+  -fx-border-color: -fx-text-box-border;
+  -fx-padding: 2;
+}
+
+.check-box:selected > .box {
+  -fx-border-color: -fx-accent;
+  -fx-background-color: -fx-accent;
+}
+
+.check-box > .box > .mark {
+  -fx-background-color: white;
+  -fx-shape: "M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z";
+}
+
+.text-input {
+  -fx-text-fill: -fx-text-inner-color;
+  -fx-highlight-fill: -fx-accent;
+  -fx-highlight-text-fill: -fx-control-inner-background;
+  -fx-prompt-text-fill: -fx-text-box-border;
+  -fx-background-color: -fx-control-inner-background;
+  -fx-border-width: 1.5;
+  -fx-border-color: -fx-text-box-border;
+  -fx-border-radius: 2;
+  -fx-padding: 8 12;
+}
+.text-input:focused {
+  -fx-border-color: -fx-accent;
+}

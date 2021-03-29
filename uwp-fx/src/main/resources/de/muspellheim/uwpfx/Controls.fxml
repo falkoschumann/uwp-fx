@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="600.0" prefWidth="800.0" spacing="12.0" styleClass="container-md" stylesheets="@uwp.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label styleClass="base" text="Buttons" />
+            <Button mnemonicParsing="false" text="Enabled button" />
+            <Button mnemonicParsing="false" text="Disabled button" />
+            <ToggleButton mnemonicParsing="false" text="Toggle button" />
+            <Label styleClass="base" text="Checkbox" />
+            <CheckBox mnemonicParsing="false" text="Unchecked" />
+            <CheckBox mnemonicParsing="false" selected="true" text="Third state" />
+            <CheckBox indeterminate="true" mnemonicParsing="false" text="Third state" />
+            <CheckBox disable="true" mnemonicParsing="false" selected="true" text="Disabled" />
+            <Label styleClass="base" text="Radio button" />
+            <RadioButton mnemonicParsing="false" text="Unchecked" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Checked" />
+            <RadioButton disable="true" mnemonicParsing="false" selected="true" text="Disabled" />
+         </children>
+      </VBox>
+      <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label styleClass="base" text="Calendar Date Picker" />
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Label title" />
+                  <DatePicker />
+               </children>
+            </VBox>
+         </children></VBox>
+      <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label styleClass="base" text="Combo box" />
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Label title" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children></VBox>
+      <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label styleClass="base" text="Textbox" />
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Label title" />
+                  <TextField promptText="Placeholder text" />
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+</HBox>
