@@ -1,0 +1,4 @@
+plugins {
+    id 'uwp-fx.java-library-conventions'
+    id 'uwp-fx.java-openjfx-conventions'
+}

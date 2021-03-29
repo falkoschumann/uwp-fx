@@ -1,0 +1,2 @@
+rootProject.name = 'uwp-fx'
+include('uwp-fx')
