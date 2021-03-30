@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox prefHeight="600.0" prefWidth="800.0" spacing="12.0" styleClass="container-md" stylesheets="@uwp.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox prefHeight="600.0" prefWidth="800.0" spacing="12.0" styleClass="container-md" stylesheets="@uwp.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox spacing="12.0" HBox.hgrow="ALWAYS">
          <children>
@@ -33,9 +33,21 @@
       <VBox spacing="12.0" HBox.hgrow="ALWAYS">
          <children>
             <Label styleClass="base" text="Calendar Date Picker" />
-            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+            <VBox styleClass="input-control">
                <children>
                   <Label styleClass="body" text="Label title" />
+                  <DatePicker />
+               </children>
+            </VBox>
+            <VBox styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Hover" />
+                  <DatePicker />
+               </children>
+            </VBox>
+            <VBox disable="true" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Disabled" />
                   <DatePicker />
                </children>
             </VBox>
@@ -43,9 +55,21 @@
       <VBox spacing="12.0" HBox.hgrow="ALWAYS">
          <children>
             <Label styleClass="base" text="Combo box" />
-            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+            <VBox styleClass="input-control">
                <children>
                   <Label styleClass="body" text="Label title" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Hover" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox disable="true" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Disabled" />
                   <ComboBox prefWidth="150.0" />
                </children>
             </VBox>
@@ -53,9 +77,21 @@
       <VBox spacing="12.0" HBox.hgrow="ALWAYS">
          <children>
             <Label styleClass="base" text="Textbox" />
-            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="input-control">
+            <VBox styleClass="input-control">
                <children>
                   <Label styleClass="body" text="Label title" />
+                  <TextField promptText="Placeholder text" />
+               </children>
+            </VBox>
+            <VBox styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Hover" />
+                  <TextField promptText="Placeholder text" />
+               </children>
+            </VBox>
+            <VBox disable="true" styleClass="input-control">
+               <children>
+                  <Label styleClass="body" text="Disabled" />
                   <TextField promptText="Placeholder text" />
                </children>
             </VBox>
